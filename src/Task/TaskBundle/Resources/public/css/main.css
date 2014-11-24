@@ -1,0 +1,72 @@
+td.TableDark {
+    background-color: #636363;
+}
+td.TableLight {
+    background-color: #cccccc;
+}
+.link {
+    color: #182638;
+}
+button {
+    font: bold 16px Arial;
+    text-decoration: none;
+    background-color: #36495e;
+    color: #ffffff;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{ font-family: Verdana,Arial, sans-serif;
+    margin: 0;
+    background-color: #182638;
+}
+
+#wrapper{ background-color: orange;
+    color: #000066;
+    width: 100%;
+    min-width:800px;
+
+}
+
+#sidebar{ float: left;
+    width: 100px;
+    color: Red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rightcolumn{ margin-left: 100px;
+    background-color: #182638;
+    color: #ffffff;
+}
+
+#logo{ background-color: #36495e;
+    color: Orange;
+    font-size: x-large;
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+}
+.content{ padding: 20px 20px 20px;
+    background-color: #182638;
+}
+
+#floatright{ margin: 10px;
+    float: right;
+}
+
+#footer{ font-size: xx-small;
+    text-align: center;
+    clear: right;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+
+#leftcolumn a{ text-decoration: none;
+    margin: 15px;
+    display: block;
+}

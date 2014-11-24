@@ -1,0 +1,7 @@
+task_task:
+    resource: "@TaskTaskBundle/Resources/config/routing.yml"
+    prefix:   /
+
+first_website:
+  resource: "@FirstFirstBundle/Resources/config/routing.yml"
+  prefix: /

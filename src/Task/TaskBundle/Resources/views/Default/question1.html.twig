@@ -1,0 +1,33 @@
+{% extends '::base.html.twig' %}
+{% block head %}
+    {{ parent }}
+{% endblock %}
+
+{% block body %}
+    <div id="logo"> {##Change id#}
+        <h5>Question #1</h5>
+
+    </div>
+    <div class="content">
+        <br/>
+        Description:
+        <p>
+            Draw the shown star pattern with the for loop tag using the twig template.<br/> Then draw the same pattern
+            mirrored along the vertical axis from the controller in php.
+        </p>
+        <br/>
+        Using Twig tags:
+        {% for i in ['**********','*********','********','*******','******','*****','****','***',
+        '**','*']|slice(0, 10) %}
+            <br/>
+            {{ i }}
+        {% endfor %}
+        <br/>
+        <br/>
+        {##}
+        Using PHP:
+        <br/>
+        {{ stars2 | nl2br}}
+    </div>
+
+{% endblock %}

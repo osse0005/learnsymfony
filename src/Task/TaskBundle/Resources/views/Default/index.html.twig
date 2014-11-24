@@ -1,0 +1,45 @@
+{% extends '::base.html.twig' %}
+{% block head %}
+    {{ parent }}
+{% endblock %}
+
+{% block body %}
+    <div id="logo"> {##Change id#}
+        <h5>Home</h5>
+    </div>
+    <div class="content">
+
+        <p>
+            Over the past few days following our conversation i have established a solid foundation
+            with the Symfony2 framework along with Twig.<br/> I have implemented a simple site to make use of these technologies.
+            While it is likely a far cry from real world, it has helped me a great deal in learning the basics of this
+            monstrous framework.
+
+        </p>
+        <p>
+            Installaion:
+                <ul>
+                    <li>VirtualBox</li>
+                    <li>Ubuntu 14.04 Server Edition</li>
+                    <li>OpenSSH Server</li>
+                    <li>LAMP Server(Apache2, MySQL, PHP)</li>
+                    <li>FTP</li>
+                    <li>Webmin</li>
+                    <li>PHPMyAdmin</li>
+                    <li>Composer</li>
+                    <li>Symfony2(Used composer to install)</li>
+                    <li>phpStorm(on host) with auto upload to apache server learnsymfony site through FTP</li>
+                    <li>Created a bundle.</li>
+                </ul>
+        </p>
+        <p>
+            Referenced Material:
+                <ul>
+                    <li><a href="http://symfony.com/doc/current/book/index.html">The Symfony Book</a></li>
+                    <li><a href="http://twig.sensiolabs.org/documentation">Twig Documentation</a></li>
+                </ul>
+        </p>
+
+    </div>
+
+{% endblock %}

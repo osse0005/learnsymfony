@@ -1,0 +1,21 @@
+{% extends '::base.html.twig' %}
+{% block head %}
+    {{ parent }}
+{% endblock %}
+
+
+{% block body %}
+
+    <div id="logo"> {##Change id#}
+        <h5>Task Manager</h5>
+    </div>
+    <div class="content">
+
+        {{ form(form) }}
+        {{ front }}
+        <br/>
+        Incomplete, does nothing behind.
+
+    </div>
+
+{% endblock %}

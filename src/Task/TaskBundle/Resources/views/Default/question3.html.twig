@@ -1,0 +1,51 @@
+{% extends '::base.html.twig' %}
+{% block head %}
+    {{ parent }}
+{% endblock %}
+
+{% block body %}
+    <div id="logo"> {##Change id#}
+        <h5>Question #3</h5>
+    </div>
+    <div class="content">
+
+        <br/>
+        Description:
+        <p>
+           Using Twig tags calculate the average of the array, and the highest value with in. <br/>
+            Then compare two arrays looking for the same values at corresponding indices.
+        </p>
+        <br/>
+
+        array #1 = 9, 3, 1, 0, 99, 2, 5, 6, 32, 1, 55 <br/>
+        array #2 = 9, 18, 1, 0, 23, 22, 4, 6, 5, 32, 55
+        <br />
+        {% set average = 0 %}
+        {% set highest = 0 %}
+        {% set array = ['9','3','1','0','99','2','5','6','32','1','55'] %}
+        {% set total = 0 %}
+        {% for i in array %}
+            {% set total = total + i %}
+            {% if i > highest %}
+                {% set highest = i %}
+            {% endif %}
+            <br/>
+        {% endfor %}
+        {% set average = total /array|length %}
+        The Average of the array is: {{ average |number_format(2,".",",")}} <br/>
+        Highest value is: {{ highest }}
+        <br/>
+        {% set array2 = ['9','18','1','0','23','22','4','6','5','32','55'] %}
+        {% for i in array %}
+            {% for j in array2 %}
+                {% if i == j %}
+                   Same values found at(index): {{ loop.index }}
+                {% endif %}
+            {% endfor %}
+            <br/>
+        {% endfor %}
+
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends '::base.html.twig' %}
+{% block head %}
+    {{ parent }}
+{% endblock %}
+
+{% block body %}
+    <div id="logo"> {##Change id#}
+        <h5>Question #2</h5>
+    </div>
+    <div class="content">
+        <br/>
+        Description:
+        <p>
+            Use a for loop to sort even numbers into left column and odd numbers into the right column.<br/>
+            Color the even cells.
+        </p>
+
+        <br />
+        {% set items = ['1','2','3','4','5','6','7','8','9'] %}
+        Using Twig tags:
+        <table width=100% border=\"1\" align=\"center\" class='Table'>
+
+        {% for items in range(0,9,2) %}
+            <tr>
+                <td class='TableDark'>{{ items }}</td>
+                <td class='TableLight'>{{ items +1 }}</td>
+
+            </tr>
+            <tr>
+
+            </tr>
+        {% endfor %}
+        </table>
+
+    </div>
+
+{% endblock %}

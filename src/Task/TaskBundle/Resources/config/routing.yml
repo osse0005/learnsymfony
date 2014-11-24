@@ -1,0 +1,19 @@
+home_page:
+    path:     /
+    defaults: { _controller: TaskTaskBundle:Default:home }
+
+question1_page:
+  path: /question1
+  defaults: { _controller: TaskTaskBundle:Default:question1 }
+
+question2_page:
+  path: /question2
+  defaults: { _controller: TaskTaskBundle:Default:question2 }
+
+question3_page:
+  path: /question3
+  defaults: { _controller: TaskTaskBundle:Default:question3 }
+
+task_task_homepage:
+    path:     /newTask
+    defaults: { _controller: TaskTaskBundle:Default:new }
